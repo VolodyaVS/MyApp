@@ -13,6 +13,7 @@
 		FFBF748D24FA984A007A5B8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBF748B24FA984A007A5B8F /* Main.storyboard */; };
 		FFBF748F24FA984B007A5B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFBF748E24FA984B007A5B8F /* Assets.xcassets */; };
 		FFBF749224FA984B007A5B8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBF749024FA984B007A5B8F /* LaunchScreen.storyboard */; };
+		FFBF749F24FABE43007A5B8F /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBF749E24FABE43007A5B8F /* UserInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FFBF748E24FA984B007A5B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFBF749124FA984B007A5B8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFBF749324FA984B007A5B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFBF749E24FABE43007A5B8F /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		FFBF748424FA984A007A5B8F /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
-				FFBF748524FA984A007A5B8F /* AppDelegate.swift */,
-				FFBF748724FA984A007A5B8F /* SceneDelegate.swift */,
-				FFBF748924FA984A007A5B8F /* ViewController.swift */,
-				FFBF748B24FA984A007A5B8F /* Main.storyboard */,
-				FFBF748E24FA984B007A5B8F /* Assets.xcassets */,
-				FFBF749024FA984B007A5B8F /* LaunchScreen.storyboard */,
-				FFBF749324FA984B007A5B8F /* Info.plist */,
+				FFBF749A24FAA41D007A5B8F /* ViewControllers */,
+				FFBF749D24FAA461007A5B8F /* Models */,
+				FFBF749924FAA40C007A5B8F /* Storyboards */,
+				FFBF749B24FAA435007A5B8F /* SupportingFiles */,
+				FFBF749C24FAA44B007A5B8F /* Sources */,
 			);
 			path = MyApp;
+			sourceTree = "<group>";
+		};
+		FFBF749924FAA40C007A5B8F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FFBF748B24FA984A007A5B8F /* Main.storyboard */,
+				FFBF749024FA984B007A5B8F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FFBF749A24FAA41D007A5B8F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFBF748924FA984A007A5B8F /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FFBF749B24FAA435007A5B8F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FFBF748524FA984A007A5B8F /* AppDelegate.swift */,
+				FFBF748724FA984A007A5B8F /* SceneDelegate.swift */,
+				FFBF749324FA984B007A5B8F /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FFBF749C24FAA44B007A5B8F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FFBF748E24FA984B007A5B8F /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FFBF749D24FAA461007A5B8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFBF749E24FABE43007A5B8F /* UserInfo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFBF749F24FABE43007A5B8F /* UserInfo.swift in Sources */,
 				FFBF748A24FA984A007A5B8F /* ViewController.swift in Sources */,
 				FFBF748624FA984A007A5B8F /* AppDelegate.swift in Sources */,
 				FFBF748824FA984A007A5B8F /* SceneDelegate.swift in Sources */,
@@ -285,7 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MyApp/Info.plist;
+				INFOPLIST_FILE = MyApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MyApp/Info.plist;
+				INFOPLIST_FILE = MyApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
