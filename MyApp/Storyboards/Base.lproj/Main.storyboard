@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login View Controller" id="BYZ-38-t0r" customClass="LoginViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,12 +21,12 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dyh-YR-nDk">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="35"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="21"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" smartInsertDeleteType="no"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Hj-tT-Oam">
                                         <rect key="frame" x="0.0" y="58" width="200" height="34"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="21"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" smartInsertDeleteType="no"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -37,14 +37,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="137" height="30"/>
                                         <state key="normal" title="Forgot User Name? "/>
                                         <connections>
-                                            <action selector="forgotNameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="agk-0X-901"/>
+                                            <action selector="forgotNameAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="AlF-mi-B32"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pe2-CJ-MUn">
                                         <rect key="frame" x="165" y="0.0" width="123" height="30"/>
                                         <state key="normal" title="Forgot Password?"/>
                                         <connections>
-                                            <action selector="forgotPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6DT-kb-T0h"/>
+                                            <action selector="forgotPassword" destination="BYZ-38-t0r" eventType="touchUpInside" id="qUM-5D-qD4"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -54,8 +54,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Log in"/>
                                 <connections>
-                                    <action selector="LogInAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Nu-tV-3qn"/>
-                                    <segue destination="r3B-Vy-FOd" kind="presentation" identifier="WelcomeVC" modalPresentationStyle="fullScreen" id="vwK-2H-BSM"/>
+                                    <action selector="LogInAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="a8o-8N-AY8"/>
+                                    <segue destination="r3B-Vy-FOd" kind="presentation" identifier="logIn" modalPresentationStyle="fullScreen" id="vwK-2H-BSM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -82,16 +82,16 @@
             </objects>
             <point key="canvasLocation" x="138.75" y="133.09859154929578"/>
         </scene>
-        <!--Welcome-->
+        <!--Welcome View Controller-->
         <scene sceneID="D3R-XO-2cX">
             <objects>
-                <viewController storyboardIdentifier="WelcomeVC" title="Welcome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="E1R-MW-7qa" sceneMemberID="viewController">
+                <viewController title="Welcome View Controller" id="E1R-MW-7qa" customClass="WelcomeViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QVf-vi-hyG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ava-cB-Fmv">
-                                <rect key="frame" x="69.5" y="195" width="181" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ava-cB-Fmv">
+                                <rect key="frame" x="107" y="195" width="106.5" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -121,35 +121,38 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person.circle.fill" catalog="system" id="iTW-V8-vcc"/>
                     <navigationItem key="navigationItem" id="bdy-o8-Ei1"/>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="ava-cB-Fmv" id="ud3-cC-3BC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bG-56-25Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="nOq-1E-ajl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1717.5" y="132.04225352112675"/>
         </scene>
-        <!--About me-->
+        <!--About Me View Controller -->
         <scene sceneID="eB8-Wv-MAt">
             <objects>
-                <viewController title="About me" id="Bj6-BQ-vjz" sceneMemberID="viewController">
+                <viewController title="About Me View Controller " id="Bj6-BQ-vjz" customClass="AboutMeViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NM2-vA-4q9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2j4-zw-f20">
-                                <rect key="frame" x="20" y="275.5" width="280" height="223.5"/>
-                                <mutableString key="text">Привет! Меня зовут Володя, мне 33 года. Я родился в Волгограде. Сейчас проживаю в Красногорске. Работаю бизнес-аналитиком 1С. Люблю заниматься спортом и путешествовать. Обожаю Swift &amp; Swiftbook. Мечтаю поработать в Tesla, Apple &amp; Netflix. Хочу разработать приложение для управления бизнес-процессами.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="20" y="319.5" width="280" height="191"/>
+                                <string key="text">Привет! Меня зовут Володя, мне 33 года. Я родился в Волгограде. Сейчас проживаю в Красногорске. Работаю бизнес-аналитиком 1С. Люблю заниматься спортом и путешествовать. Обожаю Swift &amp; Swiftbook. Мечтаю поработать в Tesla, Apple &amp; Netflix. Хочу разработать приложение для управления бизнес-процессами.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Обо мне:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0x-h1-9s4">
-                                <rect key="frame" x="20" y="20" width="102" height="28"/>
+                                <rect key="frame" x="20" y="64" width="102" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="fU2-a6-8rp">
-                                <rect key="frame" x="96" y="70" width="128" height="174"/>
+                                <rect key="frame" x="96" y="114" width="128" height="174"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="174" id="o44-Yn-WWI"/>
                                 </constraints>
@@ -170,11 +173,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hl8-CW-wt7"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="message.fill" catalog="system" id="7kR-3I-K1e"/>
+                    <navigationItem key="navigationItem" id="xB6-xc-0P9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBk-ls-W6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="915" y="888.38028169014081"/>
+            <point key="canvasLocation" x="1718" y="888"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bgx-PM-c2h">
@@ -189,12 +192,31 @@
                     </tabBar>
                     <connections>
                         <segue destination="E1R-MW-7qa" kind="relationship" relationship="viewControllers" id="oOs-VC-QHc"/>
-                        <segue destination="Bj6-BQ-vjz" kind="relationship" relationship="viewControllers" id="sma-Bc-42n"/>
+                        <segue destination="36X-B9-ida" kind="relationship" relationship="viewControllers" id="sma-Bc-42n"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QcZ-X7-PGU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="915" y="132.04225352112675"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8ZM-SR-IbB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="36X-B9-ida" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="message.fill" catalog="system" id="7kR-3I-K1e"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dY3-9a-PZP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bj6-BQ-vjz" kind="relationship" relationship="rootViewController" id="a9F-DB-HnE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0uu-cp-p8o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915" y="888.38028169014081"/>
         </scene>
     </scenes>
     <resources>

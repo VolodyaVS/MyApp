@@ -11,4 +11,8 @@ import UIKit
 struct UserInfo {
     let login: String
     let password: String
+    
+    static func getUserData() -> UserInfo {
+        UserInfo(login: "Iamfish", password: "tutifrutti")
+    }
 }

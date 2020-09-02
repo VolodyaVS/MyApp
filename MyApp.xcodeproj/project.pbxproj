@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF09E4A024FE4DEA00F5C3D3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09E49F24FE4DEA00F5C3D3 /* WelcomeViewController.swift */; };
+		FF09E4A224FE75E600F5C3D3 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09E4A124FE75E600F5C3D3 /* AboutMeViewController.swift */; };
 		FFBF748624FA984A007A5B8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBF748524FA984A007A5B8F /* AppDelegate.swift */; };
 		FFBF748824FA984A007A5B8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBF748724FA984A007A5B8F /* SceneDelegate.swift */; };
-		FFBF748A24FA984A007A5B8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBF748924FA984A007A5B8F /* ViewController.swift */; };
+		FFBF748A24FA984A007A5B8F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBF748924FA984A007A5B8F /* LoginViewController.swift */; };
 		FFBF748D24FA984A007A5B8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBF748B24FA984A007A5B8F /* Main.storyboard */; };
 		FFBF748F24FA984B007A5B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFBF748E24FA984B007A5B8F /* Assets.xcassets */; };
 		FFBF749224FA984B007A5B8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBF749024FA984B007A5B8F /* LaunchScreen.storyboard */; };
@@ -17,10 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF09E49F24FE4DEA00F5C3D3 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		FF09E4A124FE75E600F5C3D3 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		FFBF748224FA984A007A5B8F /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBF748524FA984A007A5B8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFBF748724FA984A007A5B8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FFBF748924FA984A007A5B8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFBF748924FA984A007A5B8F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FFBF748C24FA984A007A5B8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFBF748E24FA984B007A5B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFBF749124FA984B007A5B8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,7 +83,9 @@
 		FFBF749A24FAA41D007A5B8F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FFBF748924FA984A007A5B8F /* ViewController.swift */,
+				FFBF748924FA984A007A5B8F /* LoginViewController.swift */,
+				FF09E49F24FE4DEA00F5C3D3 /* WelcomeViewController.swift */,
+				FF09E4A124FE75E600F5C3D3 /* AboutMeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -182,8 +188,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFBF749F24FABE43007A5B8F /* UserInfo.swift in Sources */,
-				FFBF748A24FA984A007A5B8F /* ViewController.swift in Sources */,
+				FF09E4A024FE4DEA00F5C3D3 /* WelcomeViewController.swift in Sources */,
+				FFBF748A24FA984A007A5B8F /* LoginViewController.swift in Sources */,
 				FFBF748624FA984A007A5B8F /* AppDelegate.swift in Sources */,
+				FF09E4A224FE75E600F5C3D3 /* AboutMeViewController.swift in Sources */,
 				FFBF748824FA984A007A5B8F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
