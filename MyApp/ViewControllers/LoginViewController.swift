@@ -17,7 +17,7 @@ class LoginViewController: UIViewController {
     // MARK: - Private properties
     private let user = UserInfo.getUserData()
     
-    // MARK: Navigation
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let tabBarController = segue.destination as! UITabBarController
@@ -30,7 +30,15 @@ class LoginViewController: UIViewController {
         
     }
     
-    // MARK: IBActions
+    // MARK: - Overide methods
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        userName.delegate = self
+        userPassword.delegate = self
+    }
+    
+    
+    // MARK: - IBActions
     @IBAction func LogInAction() {
         guard
             userName.text == user.login,
@@ -74,7 +82,7 @@ extension LoginViewController {
     
 }
 
-// MARK: Text Field Delegate
+// MARK: - Text Field Delegate
 extension LoginViewController: UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -84,7 +92,6 @@ extension LoginViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == userName {
-            print("")
             textField.resignFirstResponder()
             userPassword.becomeFirstResponder()
         } else {
