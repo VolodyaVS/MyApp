@@ -33,8 +33,8 @@ class LoginViewController: UIViewController {
     // MARK: - Overide methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        userName.delegate = self
-        userPassword.delegate = self
+//        userName.delegate = self
+//        userPassword.delegate = self
     }
     
     
